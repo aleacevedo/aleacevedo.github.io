@@ -1,6 +1,8 @@
 let myHeading = document.querySelector('h1');
 let myImage = document.querySelector('img');
-let myButton = document.querySelector('button')
+let myButton = document.getElementById('changeUserBt')
+let addItemBt = document.getElementById('addItemBt')
+let list = document.querySelector('ul')
 
 myHeading.textContent = 'Hello world!';
 
@@ -12,6 +14,7 @@ if(!localStorage.getItem('name')){
 }
 
 myButton.onclick = setUserName
+addItemBt.onclick = addListItem
 
 myImage.onclick = () => {
     let mySrc = myImage.getAttribute('src');
@@ -26,4 +29,10 @@ function setUserName(){
     var myName = prompt('Please entre your name.');
     localStorage.setItem('name', myName);
     myHeading.textContent = `Mozilla is cool. ${myName}`;
+}
+
+function addListItem(){
+    let nwItem = document.createElement("li");
+    nwItem.textContent = prompt('Please enter a new item')
+    list.appendChild(nwItem);
 }
