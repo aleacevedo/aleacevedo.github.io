@@ -1,79 +1,67 @@
 html{
-    font-family: 'Ubuntu', sans-serif;
-}
-
-svg{
-    float: left;
-    width: 7%;
-    height: auto;
-    margin: 1%;
-}
-
-body {
-	margin: 0;
-}
-
-.container-nav  {
-	width: 80%;
-    margin: 0 auto;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 header {
-  background: #55d6aa;
+  background: #2e4972;
+  margin: 0;
 }
 
-header::after {
+header::after{
   content: '';
-  display: grid;
+  display: block;
   clear: both;
+  margin: 0;
 }
 
-nav {
+.container-nav{
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+}
+
+svg{
+  width: 10%;
+  height: auto;
+  margin: 2%;
+  float: left;
+}
+
+ul{
+  overflow: hidden;
+  list-style-type: none;
+  margin: 1%;
+  margin-top: 3%;
+  padding: 0;
   float: right;
 }
 
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+li{
+  float: left;
 }
 
-nav li {
-  display: inline-block;
-  margin-left: 70px;
-  padding-top: 23px;
-  position: relative;
-}
-
-nav a {
-  color: #444;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 14px;
-}
-
-nav li:hover {
-    color: black;
-}
-
-nav a:hover {
-  color: #000;
-}
-
-nav a::before {
-  content: '';
+li a{
   display: block;
-  height: 5px;
-  background-color: #444;
-  position: absolute;
-  top: 0;
-  width: 0%;
-  transition: all ease-in-out 250ms;
+  color: rgb(182, 188, 192);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-nav a:hover::before {
-  width: 100%;
+li a:hover{
+  background-color: rgb(182, 188, 192);
+  color:  #2e4972;
 }
+
+body {
+  margin: 0;
+}
+
+.home{
+  background: rgb(182, 188, 192);
+  margin:0
+}
+
 
 
   
